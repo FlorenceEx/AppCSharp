@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             BtnClick = new Button();
+            LblBouton = new Label();
             SuspendLayout();
             // 
             // BtnClick
@@ -41,19 +42,31 @@
             BtnClick.UseVisualStyleBackColor = true;
             BtnClick.Click += BtnClick_Click;
             // 
+            // LblBouton
+            // 
+            LblBouton.AutoSize = true;
+            LblBouton.Location = new Point(274, 125);
+            LblBouton.Name = "LblBouton";
+            LblBouton.Size = new Size(166, 20);
+            LblBouton.TabIndex = 1;
+            LblBouton.Text = "Ne pas obéir au bouton";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LblBouton);
             Controls.Add(BtnClick);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button BtnClick;
+        private Label LblBouton;
     }
 }
