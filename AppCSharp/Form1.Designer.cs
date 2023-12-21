@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            BtnClick = new Button();
+            SuspendLayout();
+            // 
+            // BtnClick
+            // 
+            BtnClick.Location = new Point(252, 169);
+            BtnClick.Name = "BtnClick";
+            BtnClick.Size = new Size(201, 29);
+            BtnClick.TabIndex = 0;
+            BtnClick.Text = "Clique-moi !";
+            BtnClick.UseVisualStyleBackColor = true;
+            BtnClick.Click += BtnClick_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(BtnClick);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnClick;
     }
 }

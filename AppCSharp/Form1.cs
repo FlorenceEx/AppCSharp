@@ -6,5 +6,10 @@ namespace AppCSharp
         {
             InitializeComponent();
         }
+
+        private void BtnClick_Click(object sender, EventArgs e)
+        {
+            BtnClick.Text = "Tu m'a cliqué !";
+        }
     }
 }
