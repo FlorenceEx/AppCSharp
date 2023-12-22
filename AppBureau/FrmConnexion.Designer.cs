@@ -30,10 +30,10 @@
         {
             LblConnexion = new Label();
             BtnConnexion = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            TxtLogin = new TextBox();
+            TxtPass = new TextBox();
             LblLogin = new Label();
-            Lbl = new Label();
+            LblPass = new Label();
             SuspendLayout();
             // 
             // LblConnexion
@@ -54,48 +54,49 @@
             BtnConnexion.TabIndex = 1;
             BtnConnexion.Text = "Connexion";
             BtnConnexion.UseVisualStyleBackColor = true;
+            BtnConnexion.Click += BtnConnexion_Click;
             // 
-            // textBox1
+            // TxtLogin
             // 
-            textBox1.Location = new Point(270, 105);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(242, 27);
-            textBox1.TabIndex = 2;
+            TxtLogin.Location = new Point(270, 105);
+            TxtLogin.Name = "TxtLogin";
+            TxtLogin.Size = new Size(242, 27);
+            TxtLogin.TabIndex = 2;
             // 
-            // textBox2
+            // TxtPass
             // 
-            textBox2.Location = new Point(270, 162);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(242, 27);
-            textBox2.TabIndex = 3;
+            TxtPass.Location = new Point(270, 162);
+            TxtPass.Name = "TxtPass";
+            TxtPass.Size = new Size(242, 27);
+            TxtPass.TabIndex = 3;
             // 
             // LblLogin
             // 
             LblLogin.AutoSize = true;
-            LblLogin.Location = new Point(166, 108);
+            LblLogin.Location = new Point(185, 108);
             LblLogin.Name = "LblLogin";
             LblLogin.Size = new Size(58, 20);
             LblLogin.TabIndex = 4;
             LblLogin.Text = "LOGIN :";
             // 
-            // Lbl
+            // LblPass
             // 
-            Lbl.AutoSize = true;
-            Lbl.Location = new Point(166, 165);
-            Lbl.Name = "Lbl";
-            Lbl.Size = new Size(50, 20);
-            Lbl.TabIndex = 5;
-            Lbl.Text = "label2";
+            LblPass.AutoSize = true;
+            LblPass.Location = new Point(128, 165);
+            LblPass.Name = "LblPass";
+            LblPass.Size = new Size(115, 20);
+            LblPass.TabIndex = 5;
+            LblPass.Text = "MOT DE PASSE :";
             // 
             // FrmConnexion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(683, 312);
-            Controls.Add(Lbl);
+            Controls.Add(LblPass);
             Controls.Add(LblLogin);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(TxtPass);
+            Controls.Add(TxtLogin);
             Controls.Add(BtnConnexion);
             Controls.Add(LblConnexion);
             Name = "FrmConnexion";
@@ -108,9 +109,9 @@
 
         private Label LblConnexion;
         private Button BtnConnexion;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox TxtLogin;
+        private TextBox TxtPass;
         private Label LblLogin;
-        private Label Lbl;
+        private Label LblPass;
     }
 }
