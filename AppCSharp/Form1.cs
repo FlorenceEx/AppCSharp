@@ -12,6 +12,7 @@ namespace AppCSharp
             BtnClick.Text = "Tu m'a cliqué !";
         }
 
+        string nom = " ";
         //ceci est un test Amélie à rajouter du code
     }
 }
