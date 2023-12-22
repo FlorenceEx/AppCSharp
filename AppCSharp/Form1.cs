@@ -15,5 +15,6 @@ namespace AppCSharp
         string nom = " ";
         //ceci est un test Amélie à rajouter du code
         string prenom = "Thomas";
+        string amelie = "amelie";
     }
 }
