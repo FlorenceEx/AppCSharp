@@ -1,8 +1,8 @@
 namespace AppBureau
 {
-    public partial class Form1 : Form
+    public partial class FrmConnexion : Form
     {
-        public Form1()
+        public FrmConnexion()
         {
             InitializeComponent();
         }
