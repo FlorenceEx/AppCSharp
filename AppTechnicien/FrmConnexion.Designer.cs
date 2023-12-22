@@ -1,6 +1,6 @@
 ﻿namespace AppTechnicien
 {
-    partial class Form1
+    partial class FrmConnexion
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,30 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            label1 = new Label();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // label1
             // 
-            textBox1.Location = new Point(199, 68);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(371, 43);
-            textBox1.TabIndex = 0;
+            label1.AutoSize = true;
+            label1.Location = new Point(180, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 37);
+            label1.TabIndex = 1;
+            label1.Text = "label1";
             // 
-            // Form1
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(180, 120);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(592, 96);
+            richTextBox1.TabIndex = 2;
+            richTextBox1.Text = "";
+            // 
+            // FrmConnexion
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
-            Name = "Form1";
+            ClientSize = new Size(1008, 438);
+            Controls.Add(richTextBox1);
+            Controls.Add(label1);
+            Name = "FrmConnexion";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBox1;
+        private Label label1;
+        private RichTextBox richTextBox1;
     }
 }
