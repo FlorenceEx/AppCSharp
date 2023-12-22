@@ -28,42 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            richTextBox1 = new RichTextBox();
+            LblTitre = new Label();
+            textBox1 = new TextBox();
+            BtnConnexion = new Button();
+            LblLogin = new Label();
+            LblMotDePasse = new Label();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
-            // label1
+            // LblTitre
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(180, 62);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 37);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
+            LblTitre.AutoSize = true;
+            LblTitre.Font = new Font("Segoe UI Black", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            LblTitre.Location = new Point(290, 26);
+            LblTitre.Name = "LblTitre";
+            LblTitre.Size = new Size(413, 81);
+            LblTitre.TabIndex = 1;
+            LblTitre.Text = "Se connecter";
             // 
-            // richTextBox1
+            // textBox1
             // 
-            richTextBox1.Location = new Point(180, 120);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(592, 96);
-            richTextBox1.TabIndex = 2;
-            richTextBox1.Text = "";
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(364, 169);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(413, 71);
+            textBox1.TabIndex = 2;
+            // 
+            // BtnConnexion
+            // 
+            BtnConnexion.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            BtnConnexion.Location = new Point(364, 498);
+            BtnConnexion.Name = "BtnConnexion";
+            BtnConnexion.Size = new Size(298, 95);
+            BtnConnexion.TabIndex = 3;
+            BtnConnexion.Text = "Connexion";
+            BtnConnexion.UseVisualStyleBackColor = true;
+            BtnConnexion.Click += BtnConnexion_Click;
+            // 
+            // LblLogin
+            // 
+            LblLogin.AutoSize = true;
+            LblLogin.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            LblLogin.Location = new Point(177, 169);
+            LblLogin.Name = "LblLogin";
+            LblLogin.Size = new Size(169, 65);
+            LblLogin.TabIndex = 4;
+            LblLogin.Text = "Login :";
+            // 
+            // LblMotDePasse
+            // 
+            LblMotDePasse.AutoSize = true;
+            LblMotDePasse.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            LblMotDePasse.Location = new Point(12, 331);
+            LblMotDePasse.Name = "LblMotDePasse";
+            LblMotDePasse.Size = new Size(334, 65);
+            LblMotDePasse.TabIndex = 5;
+            LblMotDePasse.Text = "Mot de passe :";
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(364, 331);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(413, 71);
+            textBox2.TabIndex = 6;
             // 
             // FrmConnexion
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1008, 438);
-            Controls.Add(richTextBox1);
-            Controls.Add(label1);
+            ClientSize = new Size(1026, 649);
+            Controls.Add(textBox2);
+            Controls.Add(LblMotDePasse);
+            Controls.Add(LblLogin);
+            Controls.Add(BtnConnexion);
+            Controls.Add(textBox1);
+            Controls.Add(LblTitre);
             Name = "FrmConnexion";
-            Text = "Form1";
+            Text = "Connexion";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label1;
-        private RichTextBox richTextBox1;
+        private Label LblTitre;
+        private TextBox textBox1;
+        private Button BtnConnexion;
+        private Label LblLogin;
+        private Label LblMotDePasse;
+        private TextBox textBox2;
     }
 }
