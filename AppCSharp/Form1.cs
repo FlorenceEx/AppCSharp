@@ -16,5 +16,6 @@ namespace AppCSharp
         //ceci est un test Amélie à rajouter du code
         string prenom = "Thomas";
         string amelie = "amelie";
+        string flo = "Fantomas";
     }
 }
